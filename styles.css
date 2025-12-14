@@ -17,7 +17,7 @@ h1 {
 }
 .hero {
   position: relative;
-  height: 70vh;   
+  height: 65vh;   
   overflow: hidden;
   color: white;
   text-align: center;
@@ -163,6 +163,7 @@ footer{
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
+
 
 
 

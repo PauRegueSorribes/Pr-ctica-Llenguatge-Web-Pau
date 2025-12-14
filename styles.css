@@ -62,7 +62,10 @@ nav a{
     font-weight:bold;
 
 }
-
+nav a:hover {
+  color: #2f8f3b; 
+  transition: color 0.5s ease; 
+}
 main{
     width:80%;
     margin:auto;
@@ -160,6 +163,7 @@ footer{
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
+
 
 
 

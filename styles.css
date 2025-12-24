@@ -166,6 +166,23 @@ footer{
     100% { transform: translateX(-50%); }
 }
 
+.toggle {
+  background-color: #2f8f3b;   
+  color: white;               
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;          
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle:hover {
+  background-color: #256f2f;
+}
+
+
 
 
 

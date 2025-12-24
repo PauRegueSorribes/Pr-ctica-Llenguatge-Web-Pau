@@ -33,6 +33,12 @@
     cada setmana.
   </p>
   </section>
+<button class="toggle">Mostra més</button>
+
+<div class="extra" style="display:none;">
+  <p>Això és informació extra sobre aquesta secció.</p>
+</div>
+
   <br>
   <section>
     <h2>Regles bàsiques</h2>
@@ -98,8 +104,23 @@
 <footer>
   <p>Pàgina creada per Pau Regué Sorribes · Curs 25-26</p>
 </footer>
+  <script>
+  const buttons = document.querySelectorAll(".toggle");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const extra = btn.nextElementSibling;
+      const hidden = extra.style.display === "none";
+
+      extra.style.display = hidden ? "block" : "none";
+      btn.textContent = hidden ? "Oculta" : "Mostra més";
+    });
+  });
+</script>
+
 </body>
 </html>
+
 
 
 

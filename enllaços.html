@@ -6,6 +6,7 @@
   <title>Passió pel Futbol - Enllaços</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+  <button id="topBtn">Torna amunt</button>
 <body>
 <header>
   <div class="hero2">
@@ -77,5 +78,25 @@
   <p>Pàgina creada per Pau Regué Sorribes · Curs 25-26</p>
 </footer>
 </body>
+  <script>
+  const topBtn = document.getElementById("topBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
+
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
 </html>
+
 

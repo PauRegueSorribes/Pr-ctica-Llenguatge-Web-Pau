@@ -233,9 +233,14 @@ body.dark img {
 }
 
 body.dark video { 
-    filter: none !important; 
+    filter: none; 
     background-color: #000; 
+    filter: blur(6px) brightness(0.85);
 }
+body.dark img {
+  
+}
+
 
 
 

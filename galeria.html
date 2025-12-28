@@ -322,10 +322,45 @@ footer p {
   background-color: #256f2f;
 }
 
+   
+
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2f8f3b;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e5e5e5;
+}
+
+body.dark header,
+body.dark section,
+body.dark footer {
+  background-color: #1e1e1e;
+  color: #e5e5e5;
+}
+
+body.dark .hero-video {
+  filter: blur(6px) brightness(0.85);
+}
+
+body.dark img {
+  filter: brightness(0.8);
+}
     </style>
 
 
 </html>
+
 
 
 

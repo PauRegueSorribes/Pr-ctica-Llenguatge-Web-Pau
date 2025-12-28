@@ -229,7 +229,7 @@ body.dark footer {
 }
 
 body.dark img {
-  filter: brightness(0.85);
+  filter: blur(6px) brightness(0.85);
 }
 
 body.dark video { 
@@ -237,9 +237,8 @@ body.dark video {
     background-color: #000; 
     filter: blur(6px) brightness(0.85);
 }
-body.dark img {
-  
-}
+
+
 
 
 

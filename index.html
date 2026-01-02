@@ -47,13 +47,11 @@
 const toggleBtn = document.getElementById("themeToggle");
 const body = document.body;
 
-// Només la primera visita real → light
 if (!localStorage.getItem("hasVisited")) {
   localStorage.setItem("theme", "light");
   localStorage.setItem("hasVisited", "true");
 }
 
-// Apliquem el tema guardat
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
   toggleBtn.textContent = "Mode clar";
@@ -61,7 +59,6 @@ if (localStorage.getItem("theme") === "dark") {
   toggleBtn.textContent = "Mode fosc";
 }
 
-// Canvi de tema
 toggleBtn.addEventListener("click", () => {
   body.classList.toggle("dark");
 
@@ -85,6 +82,7 @@ toggleBtn.addEventListener("click", () => {
 </footer>
 </body>
 </html>
+
 
 
 

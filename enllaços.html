@@ -116,14 +116,12 @@
   const toggleBtn = document.getElementById("themeToggle");
 const body = document.body;
 
-// Apliquem el tema guardat quan carreguem la pàgina
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
   toggleBtn.textContent = "Mode clar";
 } else {
   toggleBtn.textContent = "Mode fosc";
 }
-
 
 toggleBtn.addEventListener("click", () => {
   body.classList.toggle("dark");
@@ -154,6 +152,7 @@ toggleBtn.addEventListener("click", () => {
   
 
 </html>
+
 
 
 

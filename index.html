@@ -43,13 +43,12 @@
   </section>
   <br>
   <script>
-  const toggleBtn = document.getElementById("themeToggle");
-  const body = document.body;
+
  
 const toggleBtn = document.getElementById("themeToggle");
 const body = document.body;
 
-// Si és la primera visita, establim light per defecte
+
 if (!localStorage.getItem("hasVisited")) {
   localStorage.setItem("theme", "light");
   localStorage.setItem("hasVisited", "true");
@@ -63,7 +62,6 @@ if (localStorage.getItem("theme") === "dark") {
   toggleBtn.textContent = "Mode fosc";
 }
 
-// Canvi de tema
 toggleBtn.addEventListener("click", () => {
   body.classList.toggle("dark");
 
@@ -85,6 +83,7 @@ toggleBtn.addEventListener("click", () => {
 </footer>
 </body>
 </html>
+
 
 
 
